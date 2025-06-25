@@ -1,0 +1,21 @@
+Video link: https://youtu.be/sgKldqhdWlA
+
+In order to utilize the scripts created with Python-language the computer has to be able to understand
+the language itself. This is why Python compiler has to be installed on the computer running the scripts.
+
+Upon installing Python many default libraries will automatically be installed as well.
+However, Excel-coding requires additional libraries like "xlrd" and "openpyxl" to work. These libraries
+aren't automatically installed with the others alongside Python. This is what the installer is for.
+
+Follow these steps to install the script environment.
+
+
+1.  Install the newest version of Python (v3.10 or newer) from Microsoft Store.
+
+2.  Extract the contents of a release.zip file.
+
+3.  Run the installer "Script_Installer.py" on Windows Command Prompt using python
+    to install the required libraries used by the scripts.
+
+
+All done.

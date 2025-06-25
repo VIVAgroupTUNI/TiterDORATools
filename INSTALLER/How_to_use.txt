@@ -1,0 +1,23 @@
+Video link: https://youtu.be/TG0V76T9xas
+
+Follow these steps to use the script:
+
+
+1.  Place the required configuration files of the scripts inside the "config_files"
+    directory that comes with a release.zip file.
+
+2.  Place all master files that are to be used with the scripts inside the "master_files"
+    directory that comes with a release.zip file.
+
+3.  Place all data files that are to be used with the scripts inside the "data_files"
+    directory that comes with a release.zip file.
+
+4.  Run the desired script in Windows Command Prompt using python to start them
+    and follow along the script prompts.
+
+5.  More detailed and further info about the script can be accessed by running the script with
+    any of the following parameters ["i", "info", "h", "help"], e.g. "python EPDScript_96.py info"
+    on Windows Command Prompt.
+
+
+All done.
