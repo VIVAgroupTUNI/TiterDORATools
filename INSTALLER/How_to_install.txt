@@ -1,5 +1,3 @@
-Video link: https://youtu.be/sgKldqhdWlA
-
 In order to utilize the scripts created with Python-language the computer has to be able to understand
 the language itself. This is why Python compiler has to be installed on the computer running the scripts.
 
@@ -14,8 +12,8 @@ Follow these steps to install the script environment.
 
 2.  Extract the contents of a release.zip file.
 
-3.  Run the installer "Script_Installer.py" on Windows Command Prompt using python
+3.  Run the installer "Script_Installer.py" on Windows PowerShell using python
     to install the required libraries used by the scripts.
 
 
-All done.
+Instruction provided also in finnish in video format: https://youtu.be/sgKldqhdWlA
