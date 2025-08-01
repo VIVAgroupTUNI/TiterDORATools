@@ -4,7 +4,7 @@ Supplementary code for paper Quantitative enterovirus infectivity titration and 
 
 We provide a collection of Python scripts to analyse data and perform statistcal analyses to data from endpoint dilution (EPD) assay or dose response analyses (DORA). 
 
-The full script package containing the files and directories to run all the scripts is in Script Package directory. It includes the scripts for the two different analyses (EPD and DORA), different well-plate formats (96- and 384-well plates), and different analysis steps for the DORA data (normalization, 4PL fitting and statistical analysis).
+The full script package containing the files and directories to run all the scripts is in Script Package directory. It includes the scripts for the two different analyses (EPD and DORA), different well-plate formats (96- and 384-well plates), and different analysis steps for the DORA data (normalization, 4PL fitting and statistical analysis). The script package also includes test data (Test EPD.xlsx and Test DORA.xlsx files) for learning how the script works. The test data has been scripted and includes information of what parameters were used for scripting.
 
 Instruction directory contains short, basic instructions for installing Python and required libraries using Script_Installer.py, and how to use the use the scripts.
 
@@ -27,7 +27,7 @@ This program is a free sofware: you can distribute it and/or modify it under the
 
 ## Script Package
 
-The Script Package contains the scripts and necessary directories and files to run the scripts.
+The Script Package contains the scripts and necessary directories and files to run the scripts. Download Script_Package.zip and unpack it to start using the scripts.
 
 ### Directories
 
