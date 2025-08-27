@@ -12,7 +12,7 @@ To access tutorials for more detailed instructions on what the scripts do and wh
 
 ## System requirements and packages
 
-Python code has been implemented and tested with Python 3.11.9. The Script_Intaller.py installs and updates the required packages which include the following:
+Python code has been implemented and tested with Python 3.11.9. The Script_Intaller.py installs and updates the required packages which include the following alongside the version information used during script development:
 - numpy 1.26.4
 - openpyxl 3.1.5
 - matplotlib 3.9.1
