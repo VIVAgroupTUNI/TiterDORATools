@@ -6,7 +6,7 @@ We provide a collection of Python scripts to analyse data and perform statistcal
 
 The full script package containing the files and directories to run all the scripts is in Source directory. It includes the scripts for the two different analyses (EPD and DORA), different well-plate formats (96- and 384-well plates), and different analysis steps for the DORA data (normalization, 4PL fitting and statistical analysis). The script package also includes test data (Test_EPD_96wp.xlsx, Test_multiple_EPD_96wp.xlsx, Test_EPD_384wp.xlsx and Test_DORA_384wp.xlsx files) for learning how the script works. The test data has been scripted and includes information of what parameters were used for scripting.
 
-Instruction directory contains short, basic instructions for installing Python and required libraries using Script_Installer.py, and how to use the use the scripts.
+Instruction directory contains short, basic instructions for installing Python and required libraries using Script_Installer.py, and how to use the use the scripts as well as script specific instructions.
 
 To access tutorials for more detailed instructions on what the scripts do and what should be considered for each script, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
 
@@ -25,9 +25,9 @@ Python code has been implemented and tested with Python 3.11.9. The Script_Intal
 
 This program is a free sofware: you can distribute it and/or modify it under the terms of GNU General Public Lisence as published by the Free Software foundation, either version 3 of the license or (at your option) any later version.
 
-## Script Package
+## Source
 
-The Source directory contains the scripts and necessary directories and files to run the scripts. Download .zip file from Code and unpack it to start using the scripts.
+The Source directory contains the scripts and necessary directories and files to run the scripts. Download .zip file from Code and unpack it. Open Windows PowerShell in the Source directory to run the scripts.
 
 ### Directories
 
@@ -51,13 +51,13 @@ EXTRACTScript.py (version 0.0.0)
 
 EPDScript_96.py (version 0.0.0) and EPDScript_384.py (version 0.0.0)
 - Analyzes data from endpoint dilution (EPD) assay such as TCID50 assay. Extracts and arranges data based on user inputs, scores wells for cytopathic effects and calculates descriptives (averages and standard deviations for controls) and TCID50/ml based on improved Kärbers formula.
-- Prerequirements: Configuration file, data file and master file in config_files, data_files and master_files directories, respectively. Excel only contains one well plate of data per file when using EPDScript_96.py (see EXTRACTScript.py).
+- Prerequirements: Configuration file, data file and master file in config_files, data_files and master_files directories, respectively. Excel only contains one well plate of data per file when using EPDScript_96.py (see EXTRACTScript.py). Master file needs to contain at least "tube label" and "tissue" information before running the scripts. Additionally, all raw data in the data file must be scripted or else the script will give an error message.
 - Run by typing "python EPDScript_96.py" or "python EPDScript_384.py" in Windows PowerShell.
 - Parameter conditions: tissue (15 different tissues), dilution rate (positive decimal or integer number), first dilution (positive decimal or integer number), working volume (positive decimal or integer number), sample count (max 2 in 96wp and 8 in 384 wp), parallel count (4 or 8), and tube label (letters, numbers, or combination)
 
 DORAScript_96.py (version 0.0.0) and DORAScript_384.py (version 0.0.0)
 - Analyzes data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. Extracts and arranges data based on user inputs, calculates descriptives (averages and standard deviations) and normalizes the measured data between the 0% and 100% average values calculated from the control wells. Creates new sheets to the data file.
-- Prerequirements: Configuration file and data file in config_files and data_files directories, respectively. Excel only contains one well plate of data per file when using DORAScript_96.py (see EXTRACTScript.py).
+- Prerequirements: Configuration file and data file in config_files and data_files directories, respectively. Excel only contains one well plate of data per file when using DORAScript_96.py (see EXTRACTScript.py). Additionally, all raw data in the data file must be scripted/excluded or else the script will give an error message.
 - Run by typing "python DORAScript_96.py" or "python DORAScript_384.py" in Windows PowerShell.
 - Parameter conditions: analysis type (IC50, CC50, EC50 or EXCLUDE_DATA), group label (letters, numbers, or combination), initial dilution (positive decimal or integer number), dilution factor (positive or negative decimal or integer number), sample count (max 8 in 96wp and 32 in 384 wp), parallel count (1, 2, 4 or 8), and sample label (letters, numbers, or combination)
 
