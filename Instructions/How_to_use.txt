@@ -17,4 +17,6 @@ Follow these steps to use the script:
     any of the following parameters ["i", "info", "h", "help"], e.g. "python EPDScript_96.py info"
     on Windows PowerShell.
 
+6.  Script-specific instructions can be found from Instructions directory and they contain also information about how the provided test data were scripted. 
+
 
