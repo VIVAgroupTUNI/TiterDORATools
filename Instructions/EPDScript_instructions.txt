@@ -36,9 +36,11 @@ Script run
 
 1.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar and pressing Enter.
 
-2.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
+2.  Add necessary parameters to master file (at least "tube label" and "tissue") before running the script.
 
-3.  After script run, the results are shown in the provided raw data file and in the master file.
+3.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
+
+4.  After script run, the results are shown in the provided raw data file and in the master file.
 
 
 
@@ -98,5 +100,6 @@ Script run:
 - Write parallel count: 8
 - Write tube label: 1
 - Write yes/no for adding new tissue: no
+
 
 
