@@ -18,6 +18,8 @@ Prerequirements
 
 -  Data file contains a sheet with collected logarithmic dilution values (Log Dil) and normalized response values for each defined sample in defined groups.
 
+-  Excel file must be closed during script run or script will give error message.
+
 
 Parameter conditions
 
@@ -51,3 +53,4 @@ Script run:
 	- Select analysis type: IC50
 
 To continue data analysis, run STATScript.py and follow STATScript instructions.
+
