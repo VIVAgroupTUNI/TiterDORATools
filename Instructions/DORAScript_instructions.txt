@@ -15,6 +15,8 @@ Prerequirements
 
 -  All data in the data file must be scripted/excluded or else the script will give an error message.
 
+-  Excel file must be closed during script run or script will give error message.
+
 
 Parameter conditions:
 
@@ -78,6 +80,7 @@ Normalization and data arranging with DORAScript_384.py:
 	- Write yes/no for adding new group: no
 
 To continue data analysis, run 4PLScript.py and follow 4PLScript instructions.
+
 
 
 
