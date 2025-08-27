@@ -16,4 +16,3 @@ Follow these steps to install the script environment.
     to install the required libraries used by the scripts.
 
 
-Instructions provided also in Finnish in video format: https://youtu.be/sgKldqhdWlA
