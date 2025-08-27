@@ -10,9 +10,11 @@ Follow these steps to install the script environment.
 
 1.  Install the newest version of Python (v3.10 or newer) from Microsoft Store.
 
-2.  Extract the contents of a release.zip file.
+2.  Extract the contents of TiterDORATools-main.zip file.
 
-3.  Run the installer "Script_Installer.py" on Windows PowerShell using python
+3.  Access Windows PowerShell by first going into Source directory, typing powershell into address bar and pressing Enter.
+
+4.  Run the installer "Script_Installer.py" on Windows PowerShell by typing "python Script_Installer.py"
     to install the required libraries used by the scripts.
 
 
