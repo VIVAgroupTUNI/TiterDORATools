@@ -49,7 +49,7 @@ Basic script run:
 
 
 
-Instructions on how provided test data was run with EPDScripts.
+Instructions on how the test data was run with EPDScripts.
 
 Example 1: Test_EPD_96wp.xlsx
 
@@ -103,6 +103,7 @@ Script run:
 - Write parallel count: 8
 - Write tube label: 1
 - Write yes/no for adding new tissue: no
+
 
 
 
