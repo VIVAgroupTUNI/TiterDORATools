@@ -1,17 +1,19 @@
 Instructions on how to use DORAScript_96.py and DORAScript_384.py python scripts.
-Additionally, these instructions contain the information about DORA test data provided.
+These instructions also contain information about example DORA test data provided.
 
 
--  Analyzes data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. 
+Introduction:
 
--  Extracts and arranges data based on user inputs, calculates descriptives (averages and standard deviations) and normalizes the measured data between the 0% and 100% average values calculated from the control wells.
+-  Analyze data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. 
+
+-  Extract and arrange data based on user inputs, calculate descriptives (averages and standard deviations) and normalize the measured data between 0% and 100% average values calculated from the control wells.
 
 
-Prerequirements
+Prerequirements:
 
 -  Configuration file and data file are available in config_files and data_files directories, respectively. 
 
--  Excel only contains one well plate of data per file when using DORAScript_96.py (see EXTRACTScript.py instructions). 
+-  Excel only contains one well plate of data per file when using DORAScript_96.py (see EXTRACTScript_instructions.txt). 
 
 -  All data in the data file must be scripted/excluded or else the script will give an error message.
 
@@ -20,7 +22,7 @@ Prerequirements
 
 Parameter conditions:
 
--  Analysis type can be either IC50, CC50, EC50 or EXCLUDE_DATA. Using EXCLUDE_DATA option, the selected data will not appea into results after script run.
+-  Analysis type can be either IC50, CC50, EC50 or EXCLUDE_DATA. Using EXCLUDE_DATA option, the selected data will not appear into results after script run.
 -  Group label can be letters, numbers, or combination of them. 
 -  Initial dilution can be positive decimal or integer number.
 -  Dilution factor can be positive or negative decimal or integer number.
@@ -29,12 +31,15 @@ Parameter conditions:
 -  Sample label can be letters, numbers, or combination of them.
 
 
+Basic script run:
 
-Script run
+1.  Close all Excel files that are analysed/used by the scripts (i.e. data files).
 
-1.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar and pressing Enter.
+2.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
 
-2.  Run script by typing "python DORAScript_96.py" or "python DORAScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python DORAScript_384.py help" on Windows PowerShell.
+3.  Run script by typing "python DORAScript_96.py" or "python DORAScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python DORAScript_384.py help" on Windows PowerShell.
+
+4.  
 
 3.  After script run, the results are shown in the provided raw data file.
 
@@ -80,6 +85,7 @@ Normalization and data arranging with DORAScript_384.py:
 	- Write yes/no for adding new group: no
 
 To continue data analysis, run 4PLScript.py and follow 4PLScript instructions.
+
 
 
 
