@@ -1,22 +1,24 @@
 Follow these steps to use the script:
 
 
-1.  Place the required configuration files of the scripts inside the "config_files"
-    directory that comes with a release.zip file.
+1.  Make sure required configuration files of the scripts are inside the "config_files"
+    directory that comes with TiterDORATools-main.zip file. 
 
-2.  Place all master files that are to be used with the scripts inside the "master_files"
-    directory that comes with a release.zip file.
+2.  Make sure all master files that are to be used with the scripts are inside the "master_files"
+    directory that comes with TiterDORATools-main.zip file.
 
-3.  Place all data files that are to be used with the scripts inside the "data_files"
-    directory that comes with a release.zip file.
+3.  Make sure all data files that are to be used with the scripts are inside the "data_files"
+    directory that comes with TiterDORATools-main.zip file.
 
-4.  Run the desired script in Windows PowerShell using python to start them
-    and follow along the script prompts.
+4.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
 
-5.  More detailed and further info about the script can be accessed by running the script with
+5.  Run the desired script in Windows PowerShell using python to start them
+    and follow along the script prompts. Run the script by typing e.g., "python EPDScript_96.py" and press Enter.
+
+6.  More detailed and further info about the script can be accessed by running the script with
     any of the following parameters ["i", "info", "h", "help"], e.g. "python EPDScript_96.py info"
     on Windows PowerShell.
 
-6.  Script-specific instructions can be found from Instructions directory and they contain also information about how the provided test data were scripted. 
+7.  Script-specific instructions can be found from Instructions directory and they also contain information about how the provided test data were scripted. 
 
 
