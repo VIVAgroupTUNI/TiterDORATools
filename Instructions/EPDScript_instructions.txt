@@ -43,7 +43,7 @@ Basic script run:
 
 4.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
 
-5.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing number and pressing Enter or by writing correct value or label and then pressing Enter to move forward.
+5.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing correct number for the prompt or by writing correct value/text and then pressing Enter to move forward.
 
 6.  After script run, the results are shown in the raw data file in new sheets and in the master file.
 
@@ -103,6 +103,7 @@ Script run:
 - Write parallel count: 8
 - Write tube label: 1
 - Write yes/no for adding new tissue: no
+
 
 
 
