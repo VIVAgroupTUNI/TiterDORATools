@@ -1,8 +1,0 @@
-{
-    "analysis_types":
-    [
-        "IC50",
-        "CC50",
-        "EC50"
-    ]
-}
