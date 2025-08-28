@@ -33,7 +33,7 @@ Basic script run:
 
 4.  Follow script prompts and choose correct parameters by typing correct number for the prompt and pressing Enter to move forward.
 
-5.  After script run, the results are shown in the raw data file in new sheet.
+5.  After script run, the results are shown in the raw data file in a new sheet.
 
 
 
@@ -49,6 +49,7 @@ Statistical analysis:
 	- Select data file: Test_DORA_384wp.xlsx
 	- Select data sheet: SCR_ic50_RESULTS
 	- Select statistical test: Mann-Whitney
+
 
 
 
