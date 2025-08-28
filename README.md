@@ -1,12 +1,12 @@
 # TiterDORATools
 
-Supplementary code for paper Quantitative virus infectivity titration and dose response analyses using cell-culture based methods and python code assisted data analysis (DOI: XX).
+Supplementary code for paper Quantitative virus infectivity titration and dose response analyses using cell-culture based methods and python code assisted data analysis.
 
-We provide a collection of Python scripts to analyse data and perform statistcal analyses to data from endpoint dilution (EPD) assay or dose response analyses (DORA). 
+We provide a collection of Python scripts to analyse data and perform statistcal analyses to data from endpoint dilution (EPD) assay and dose response analyses (DORA). 
 
-The full script package containing the files and directories to run all the scripts is in Source directory. It includes the scripts for the two different analyses (EPD and DORA), different well-plate formats (96- and 384-well plates), and different analysis steps for the DORA data (normalization, 4PL fitting and statistical analysis). The script package also includes test data (Test_EPD_96wp.xlsx, Test_multiple_EPD_96wp.xlsx, Test_EPD_384wp.xlsx and Test_DORA_384wp.xlsx files) for learning how the script works. The test data has been scripted and includes information of what parameters were used for scripting.
+The full script package containing the files and directories to run all the scripts is in Source directory. It includes the scripts for the two different analyses (EPD and DORA), different well-plate formats (96- and 384-well plates), and different analysis steps for the DORA data analysis (normalization, 4PL fitting and statistical analysis). The script package also includes test data (Test_EPD_96wp.xlsx, Test_multiple_EPD_96wp.xlsx, Test_EPD_384wp.xlsx and Test_DORA_384wp.xlsx files) for learning how the scripts work. The test data has been scripted and includes information of what parameters were used for scripting.
 
-Instruction directory contains short, basic instructions for installing Python and required libraries using Script_Installer.py, and how to use the use the scripts as well as script specific instructions.
+Instruction directory contains short, basic instructions for installing Python and required libraries using Script_Installer.py, and how to use the use the scripts as well as script specific instructions. Script speciic instructions also include the test data examples.
 
 To access tutorials for more detailed instructions on what the scripts do and what should be considered for each script, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
 
@@ -27,11 +27,11 @@ This program is a free sofware: you can distribute it and/or modify it under the
 
 ## Source
 
-The Source directory contains the scripts and necessary directories and files to run the scripts. Download .zip file from Code and unpack it. Open Windows PowerShell in the Source directory to run the scripts.
+The Source directory contains the scripts and necessary directories and files to run the scripts. Download .zip file from GitHub (from Code) and unpack it. Open Windows PowerShell in the Source directory to run the scripts.
 
 ### Directories
 
-To run the scripts, the working directory needs to contain the scripts and the following directories: config_files, data_files, master_files, and results_files. 
+To run the scripts, the working directory needs to contain the scripts and the following directories: config_files, data_files, master_files, and result_files. 
 - Config_files contains configuration files used by the EPD scripts (EPDScript_96.py and EPDScript_384.py), DORA scripts (DORAScript_96.py and DORAScript_384.py) and 4PLScript.py. 
 - Data_files should contain the raw data files that will be analysed by the scripts. Four analyzed raw data files (Test_EPD_96wp.xlsx, Test_multiple_EPD_96wp.xlsx, Test_EPD_384wp.xlsx and Test_DORA_384wp.xlsx) are provided with information sheet on how the raw data files were run with scripts.
 - Master_file should contain the master file where EPD results are stored. Example master file is provided. See further instructions on what to include in master file from script tutorial as explained above. 
@@ -39,35 +39,32 @@ To run the scripts, the working directory needs to contain the scripts and the f
 
 ### Scripts
 
-Script_Installer.py (version 0.0.0)
+#### Script_Installer.py (version 0.1.0)
 - Installs and updates Python packages required for scripts to run.
 - Prerequirements: Installed Python and internet access.
-- Run by typing "python Script_Installer.py" in Windows PowerShell.
+- See "How_to_install.txt" for guidance.
 
-EXTRACTScript.py (version 0.0.0)
+#### EXTRACTScript.py (version 0.1.0)
 - Selects and extracts data from Excel file containing multiple 96-well plate analyses on the same sheet. Divides each 96-well plate data to Excel files of their own, and zipps the files into a zip container stored at result_files directory. Separation of data is required for the EPDScript_96.py and DORAScript_96.py to function. In these scripts, the data file should only contain one well plate of data.
 - Prerequirements: Data file in data_files directory.
-- Run by typing "python EXTRACTScript.py" in Windows PowerShell.
+- See "EXTRACTScript_instructions.txt" for guidance.
 
-EPDScript_96.py (version 0.0.0) and EPDScript_384.py (version 0.0.0)
-- Analyzes data from endpoint dilution (EPD) assay such as TCID50 assay. Extracts and arranges data based on user inputs, scores wells for cytopathic effects and calculates descriptives (averages and standard deviations for controls) and TCID50/ml based on improved Kärbers formula.
+#### EPDScript_96.py (version 0.1.0) and EPDScript_384.py (version 0.1.0)
+- Analyze data from endpoint dilution (EPD) assay such as TCID50 assay. Extract and arrange data based on user inputs, score wells for cytopathic effects and calculate descriptives (averages and standard deviations for controls) and TCID50/ml based on improved Kärber's formula.
 - Prerequirements: Configuration file, data file and master file in config_files, data_files and master_files directories, respectively. Excel only contains one well plate of data per file when using EPDScript_96.py (see EXTRACTScript.py). Master file needs to contain at least "tube label" and "tissue" information before running the scripts. Additionally, all raw data in the data file must be scripted or else the script will give an error message.
-- Run by typing "python EPDScript_96.py" or "python EPDScript_384.py" in Windows PowerShell.
-- Parameter conditions: tissue (15 different tissues), dilution rate (positive decimal or integer number), first dilution (positive decimal or integer number), working volume (positive decimal or integer number; in milliliters (ml)), sample count (max 2 in 96wp and 8 in 384 wp), parallel count (4 or 8), and tube label (letters, numbers, or combination)
+- See "EPDScript_instructions.txt" for guidance.
 
-DORAScript_96.py (version 0.0.0) and DORAScript_384.py (version 0.0.0)
-- Analyzes data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. Extracts and arranges data based on user inputs, calculates descriptives (averages and standard deviations) and normalizes the measured data between the 0% and 100% average values calculated from the control wells. Creates new sheets to the data file.
+#### DORAScript_96.py (version 0.1.0) and DORAScript_384.py (version 0.1.0)
+- Analyze data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. Extract and arrange data based on user inputs, calculate descriptives (averages and standard deviations) and normalize the measured data between 0% and 100% average values calculated from control wells. Create new sheets to the data file.
 - Prerequirements: Configuration file and data file in config_files and data_files directories, respectively. Excel only contains one well plate of data per file when using DORAScript_96.py (see EXTRACTScript.py). Additionally, all raw data in the data file must be scripted/excluded or else the script will give an error message.
-- Run by typing "python DORAScript_96.py" or "python DORAScript_384.py" in Windows PowerShell.
-- Parameter conditions: analysis type (IC50, CC50, EC50 or EXCLUDE_DATA), group label (letters, numbers, or combination), initial dilution (positive decimal or integer number), dilution factor (positive or negative decimal or integer number), sample count (max 8 in 96wp and 32 in 384 wp), parallel count (1, 2, 4 or 8), and sample label (letters, numbers, or combination)
+- See "DORAScript_instructions.txt" for guidance.
 
-4PLScript.py (version 0.0.0)
-- Analyzes data generated by the DORAScripts. Extracts data from selected groups, validates data and performs four parameter logistic (4PL) regression function to fit the data. Creates new sheet into the data file to store the data (IC50/CC50/EC50 value, LogIC50/CC50/EC50 value, and HillSlope). Additionally, creates graphs for selected groups and stores them as .png files into result_files directory.
+#### 4PLScript.py (version 0.1.0)
+- Analyzes data generated by the DORAScripts. Extracts data from selected groups, validates data and performs four-parameter logistic (4PL) regression function to fit the data. Creates new sheet into the data file to store the data (IC50/CC50/EC50 value, LogIC50/CC50/EC50 value, and HillSlope). Additionally, creates graphs for selected groups and stores them as .png files into result_files directory.
 - Prerequirements: Data file in data_files directory. File containing a sheet with collected logarithmic dilution values (Log Dil) and normalized response values for each defined sample in defined groups.
-- Run by typing "python 4PLScript.py" in Windows PowerShell.
-- Parameter conditions: analysis type (IC50, CC50, EC50)
+- See "4PLScript_instructions.txt" for guidance.
 
-STATScript.py (version 0.0.0)
-- Runs non-parametric statistical tests for selected groups either Kruskal-Wallis test with Dunn's test for pairwise comparisons or Mann-Whitney U test. P-values are corrected with Bonferroni correction. Creates new sheet into the data file to store results. Shows results in table format showing p-values and statistical significance indicated by symbols that correspond to "not significant", "0.05", "0.01", "0.001" and "0.0001" level of significance.
+#### STATScript.py (version 0.1.0)
+- Runs non-parametric statistical tests for selected groups either Kruskal-Wallis test with Dunn's test for pairwise comparisons or Mann-Whitney U test. P-values are corrected with Bonferroni correction. Creates new sheet into the data file to store results. Shows results in table format with p-values and statistical significance indicated by symbols that correspond to "not significant", "0.05", "0.01", "0.001" and "0.0001" level of significance.
 - Prerequirements: Data file in data_files directory. File containing a sheet generated by 4PLScript.py or excel sheet formated the same way.
-- Run by typing "python STATScript.py" in Windows PowerShell.
+- See "STATScript_instructions.txt" for guidance.
