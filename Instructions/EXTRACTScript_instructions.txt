@@ -6,7 +6,8 @@ Introduction:
 
 -  Selects and extracts data from Excel file containing multiple 96-well plate analyses on the same sheet. 
 
--  Divides each 96-well plate data to Excel files of their own, and zipps the files into a zip container stored at result_files directory. 
+-  Divides each 96-well plate data to Excel files of their own, and zipps the files into a zip container 
+   stored at result_files directory. 
 
 -  Separation of data is required for the EPDScript_96.py and DORAScript_96.py to function. 
    In these scripts, the data file should only contain one well plate of data.
@@ -23,15 +24,19 @@ Basic script run:
 
 1.  Close Excel files that are analysed/used by the script (i.e. data files).
 
-2.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar and pressing Enter.
+2.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar 
+    and pressing Enter.
 
-3.  Run script by typing "python EXTRACTScript.py" on Windows PowerShell. To access more instructions on how the script functions, 
-    run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EXTRACTScript.py help" on Windows PowerShell.
+3.  Run script by typing "python EXTRACTScript.py" on Windows PowerShell. To access more instructions
+    on how the script functions, run the script with any of the following parameters 
+    ["i", "info", "h", "help"] e.g., "python EXTRACTScript.py help" on Windows PowerShell.
 
-4.  Follow script prompts and choose correct parameters by typing correct number from the prompt and pressing Enter to move forward.
+4.  Follow script prompts and choose correct parameters by typing correct number from the prompt 
+    and pressing Enter to move forward.
 
-3.  After script run, the extracted plates are stored in result_files directory in their own Excel files. Unpack the .zip file and 
-    move the files into data_files directory. Continue data analysis from those files according to the EPDScript_instructions.txt file.
+3.  After script run, the extracted plates are stored in result_files directory in their own Excel files. 
+    Unpack the .zip file and move the files into data_files directory. Continue data analysis from 
+    those files according to the EPDScript_instructions.txt file.
 
 
 
@@ -39,7 +44,8 @@ Instructions on how provided test data was run with EXTRACTScript.
 
 Example 1: Test_multiple_EPD_96wp.xlsx
 
-The raw data sheet contains two 96-wp of data on top of each other. To separate the two 96-wps to different Excel files, run EXCTRACTScript.py.
+The raw data sheet contains two 96-wp of data on top of each other. 
+To separate the two 96-wps to different Excel files, run EXCTRACTScript.py.
 
 Script run: 
 - Open Windows PowerShell as instructed above.
@@ -48,5 +54,6 @@ Script run:
 - Select data sheet: Plate
 
 - Find extracted plates from result_files directory.
+
 
 
