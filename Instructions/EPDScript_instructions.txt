@@ -1,24 +1,25 @@
 Instructions on how to use EPDScript_96.py and EPDScript_384.py python scripts.
-Additionally, these instructions contain the information about EPD test data provided.
+These instructions also contain information about example EPD test data provided.
 
 
+Introduction:
 
 -  EPDScript_96.py and EPDScript_384.py analyze data from endpoint dilution (EPD) assay such as TCID50 assay. 
 
 -  Scripts extract and arrange data based on user inputs, score wells for cytopathic effects and calculate descriptives (averages and standard deviations for controls) and TCID50/ml based on improved Kärbers formula.
 
 
-Prerequirements
+Prerequirements:
 
 -  Configuration file, data file and master file are available in config_files, data_files and master_files directories, respectively.
 
--  Excel file containing raw data should only contain one well plate of data per file when using EPDScript_96.py (see EXTRACTScript.py instructions).
+-  Excel file containing raw data should only contain one well plate of data per file when using EPDScript_96.py (see EXTRACTScript_instructions.txt).
 
 -  Master file needs to contain at least "tube label" and "tissue" information before running the scripts.
 
 -  All data in the data file must be scripted or else the script will give an error message.
 
--  Excel file must be closed during script run or script will give error message.
+-  Excel file must be closed during script run or script will give an error message.
 
 
 Parameter conditions:
@@ -32,15 +33,19 @@ Parameter conditions:
 -  Tube label can be letters, numbers, or combination of them.
 
 
-Script run
+Basic script run:
 
-1.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar and pressing Enter.
+1.  Add necessary parameters to master file (at least "tube label" and "tissue") before running the script.
 
-2.  Add necessary parameters to master file (at least "tube label" and "tissue") before running the script.
+2.  Close Excel files that are analysed/used by the script (i.e. master file and data files).
 
-3.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
+3.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
 
-4.  After script run, the results are shown in the provided raw data file and in the master file.
+4.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
+
+5.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing number and pressing Enter or by writing correct value or label and then pressing Enter to move forward.
+
+6.  After script run, the results are shown in the raw data file in new sheets and in the master file.
 
 
 
@@ -49,7 +54,6 @@ Instructions on how provided test data was run with EPDScripts.
 Example 1: Test_EPD_96wp.xlsx
 
 Data parameters for script run and master file:
-
 - Tissue: Virus
 - Tube label: 2
 - Cells per well: 8 000
@@ -77,7 +81,6 @@ Script run:
 Example 2: Test_EPD_384wp.xlsx
 
 Data parameters for script run and master file:
-
 - Tissue: Virus
 - Tube label: 1
 - Cells per well: 16 000
@@ -100,6 +103,7 @@ Script run:
 - Write parallel count: 8
 - Write tube label: 1
 - Write yes/no for adding new tissue: no
+
 
 
 
