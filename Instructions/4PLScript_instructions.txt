@@ -35,7 +35,7 @@ Script run
 
 3.  Run script by typing "python 4PLScript.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python 4PLScript.py help" on Windows PowerShell.
 
-4.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing number and pressing Enter or by writing correct value or label and then pressing Enter to move forward.
+4.  Follow script prompts and choose correct parameters by typing correct number for the prompt and pressing Enter to move forward.
 
 5.  After script run, the results are shown in the raw data file in new sheets and generated graphs in result_files directory.
 
@@ -58,5 +58,6 @@ Script run:
 	- Select analysis type: IC50
 
 To continue data analysis, run STATScript.py and follow STATScript instructions.
+
 
 
