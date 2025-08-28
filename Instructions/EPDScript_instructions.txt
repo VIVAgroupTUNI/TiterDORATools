@@ -6,15 +6,18 @@ Introduction:
 
 -  EPDScript_96.py and EPDScript_384.py analyze data from endpoint dilution (EPD) assay such as TCID50 assay. 
 
--  Scripts extract and arrange data based on user inputs, score wells for cytopathic effects and calculate descriptives 
-   (averages and standard deviations for controls) and TCID50/ml based on improved Kärbers formula.
+-  Scripts extract and arrange data based on user inputs, score wells for cytopathic effects and 
+   calculate descriptives    (averages and standard deviations for controls) and TCID50/ml based 
+   on improved Kärber's formula.
 
 
 Prerequirements:
 
--  Configuration file, data file and master file are available in config_files, data_files and master_files directories, respectively.
+-  Configuration file, data file and master file are available in config_files, data_files and 
+   master_files directories, respectively.
 
--  Excel file containing raw data should only contain one well plate of data per file when using EPDScript_96.py (see EXTRACTScript_instructions.txt).
+-  Excel file containing raw data should only contain one well plate of data per file when using 
+   EPDScript_96.py (see EXTRACTScript_instructions.txt).
 
 -  Master file needs to contain at least "tube label" and "tissue" information before running the scripts.
 
@@ -29,7 +32,8 @@ Parameter conditions:
 -  Dilution rate can be positive decimal or integer number.
 -  First dilution can be positive decimal or integer number.
 -  Working volume can be positive decimal or integer number and should be presented as milliliters (ml).
--  Sample count can be maximum of 2 in 96wp format and 8 in 384 wp format. Sample count depends on the parallel count.
+-  Sample count can be maximum of 2 in 96wp format and 8 in 384 wp format. 
+   Sample count depends on the parallel count.
 -  Parallel count can be 4 or 8.
 -  Tube label can be letters, numbers, or combination of them.
 
@@ -42,11 +46,12 @@ Basic script run:
 
 3.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
 
-4.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, 
-    run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
+4.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. 
+    To access more instructions on how the script functions, run the script with any of the following 
+    parameters ["i", "info", "h", "help"] e.g., "python EPDScript_384.py help" on Windows PowerShell.
 
-5.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing correct number for the prompt 
-    or by writing correct value/text and then pressing Enter to move forward.
+5.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option 
+    by typing correct number for the prompt or by writing correct value/text and then pressing Enter to move forward.
 
 6.  After script run, the results are shown in the raw data file in new sheets and in the master file.
 
@@ -106,6 +111,7 @@ Script run:
 - Write parallel count: 8
 - Write tube label: 1
 - Write yes/no for adding new tissue: no
+
 
 
 
