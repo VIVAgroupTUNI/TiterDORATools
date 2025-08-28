@@ -4,9 +4,11 @@ These instructions also contain information about example DORA test data provide
 
 Introduction:
 
--  Analyze data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. 
+-  Analyze data from dose response analyses (DORA) such as inhibitory concentration 50% (IC50), 
+   effective concentration 50% (EC50) and cytotoxic concentration 50% (CC50) assays. 
 
--  Extract and arrange data based on user inputs, calculate descriptives (averages and standard deviations) and normalize the measured data between 0% and 100% average values calculated from the control wells.
+-  Extract and arrange data based on user inputs, calculate descriptives (averages and standard deviations) 
+   and normalize the measured data between 0% and 100% average values calculated from the control wells.
 
 
 Prerequirements:
@@ -22,7 +24,8 @@ Prerequirements:
 
 Parameter conditions:
 
--  Analysis type can be either IC50, CC50, EC50 or EXCLUDE_DATA. Using EXCLUDE_DATA option, the selected data will not appear into results after script run.
+-  Analysis type can be either IC50, CC50, EC50 or EXCLUDE_DATA. Using EXCLUDE_DATA option, 
+   the selected data will not appear into results after script run.
 -  Group label can be letters, numbers, or combination of them. 
 -  Initial dilution can be positive decimal or integer number.
 -  Dilution factor can be positive or negative decimal or integer number.
@@ -37,9 +40,11 @@ Basic script run:
 
 2.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
 
-3.  Run script by typing "python DORAScript_96.py" or "python DORAScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python DORAScript_384.py help" on Windows PowerShell.
+3.  Run script by typing "python DORAScript_96.py" or "python DORAScript_384.py" on Windows PowerShell. To access more instructions on how the script functions, 
+	run the script with any of the following parameters ["i", "info", "h", "help"] e.g., "python DORAScript_384.py help" on Windows PowerShell.
 
-4.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing correct number for the prompt or by writing correct value/text and then pressing Enter to move forward.
+4.  Follow script prompts and choose/fill correct parameters. Do this by either selecting correct option by typing correct number for the prompt 
+	or by writing correct value/text and then pressing Enter to move forward.
 
 3.  After script run, the results are shown in the raw data file in new sheets.
 
@@ -85,6 +90,7 @@ Normalization and data arranging with DORAScript_384.py:
 	- Write yes/no for adding new group: no
 
 To continue data analysis, run 4PLScript.py and follow 4PLScript instructions.
+
 
 
 
