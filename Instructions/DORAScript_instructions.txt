@@ -47,7 +47,7 @@ Basic script run:
 
 
 
-Instructions on how provided test data was run with DORAScripts.
+Instructions on how the test data was run with DORAScripts.
 
 Example 1: Test_DORA_384wp.xlsx
 
@@ -85,6 +85,7 @@ Normalization and data arranging with DORAScript_384.py:
 	- Write yes/no for adding new group: no
 
 To continue data analysis, run 4PLScript.py and follow 4PLScript instructions.
+
 
 
 
