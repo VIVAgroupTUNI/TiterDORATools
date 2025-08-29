@@ -12,7 +12,8 @@ Follow these steps to install the script environment.
 
 2.  Extract/Unpack the contents of TiterDORATools-main.zip file.
 
-3.  Open Windows PowerShell by going into Source directory, type "powershell" into address bar and press Enter.
+3.  Open Windows PowerShell by going into Source directory found from the TiterDORATools-main.zip file, 
+    type "powershell" into address bar and press Enter.
 
 4.  Run the installer "Script_Installer.py" on Windows PowerShell by typing "python Script_Installer.py" to use python
     to install the required libraries used by the scripts.
