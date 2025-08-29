@@ -24,7 +24,7 @@ Basic script run:
 
 1.  Close Excel files that are analysed/used by the script (i.e. data files).
 
-2.  Open Windows PowerShell by going into Source directory in TiterDORATools-main.zip,
+2.  Open Windows PowerShell by going into Source directory found from the TiterDORATools-main.zip file,
     typing "powershell" to address bar and pressing Enter.
 
 3.  Run script by typing "python EXTRACTScript.py" on Windows PowerShell. To access more instructions
@@ -54,6 +54,7 @@ Script run:
 - Select data sheet: Plate
 
 - Find extracted plates from result_files directory.
+
 
 
 
