@@ -32,20 +32,25 @@ Parameter conditions:
 
 Basic script run:
 
-1.  Close Excel files that are analysed/used by the script (i.e. data files).
+1.  Make sure you have first run the DORAScript or that you have a sheet in the data file that contains
+	logarithmic dilution values (Log dil) and normalized response values for each sample in defined groups
+	in the same format as in the example Test_DORA_384wp.xlsx file in SCR_group_EXPORT sheet.
 
-2.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar and pressing Enter.
+2.  Close Excel files that are analysed/used by the script (i.e. data files).
 
-3.  Run script by typing "python 4PLScript.py" on Windows PowerShell. 
+3.  Open Windows PowerShell by going into Source directory in TiterDORATools-main.zip file,
+    typing "powershell" to address bar and pressing Enter.
+
+4.  Run script by typing "python 4PLScript.py" on Windows PowerShell. 
     To access more instructions on how the script functions, run the script with any of the following parameters
     ["i", "info", "h", "help"] e.g., "python 4PLScript.py help" on Windows PowerShell.
 
-4.  Follow script prompts and choose correct parameters by typing correct number for the prompt and 
+5.  Follow script prompts and choose correct parameters by typing correct number for the prompt and 
     pressing Enter to move forward.
 
-5.  After script run, the results are shown in the raw data file in new sheets and generated graphs in result_files directory.
+6.  After script run, the results are shown in the raw data file in new sheets and generated graphs in result_files directory.
 
-6.  To continue data analysis, move to STATScript instructions.
+7.  To continue data analysis, move to STATScript instructions.
 
 
 
@@ -64,6 +69,7 @@ Script run:
 	- Select analysis type: IC50
 
 To continue data analysis, run STATScript.py and follow STATScript instructions.
+
 
 
 
