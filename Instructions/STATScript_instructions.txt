@@ -28,18 +28,23 @@ Prerequirements:
 
 Basic script run:
 
-1.  Close Excel files that are analysed/used by the script (i.e. data files).
+1.  Make sure you have run 4PLScript before or that you have a sheet in the data file that contains
+	IC50/CC50/EC50 results for each sample in defined groups in the same format as shown in 
+	example Test_DORA_384wp.xlsx file in SCR_ic50_RESULTS sheet.
 
-2.  Open Windows PowerShell by going into Source directory, typing "powershell" to address bar and pressing Enter.
+2.  Close Excel files that are analysed/used by the script (i.e. data files).
 
-3.  Run script by typing "python STATScript.py" on Windows PowerShell. To access more instructions on how the 
+3.  Open Windows PowerShell by going into Source directory found from the TiterDORATools-main.zip file,
+    typing "powershell" to address bar and pressing Enter.
+
+4.  Run script by typing "python STATScript.py" on Windows PowerShell. To access more instructions on how the 
     script functions, run the script with any of the following parameters ["i", "info", "h", "help"] 
     e.g., "python STATScript.py help" on Windows PowerShell.
 
-4.  Follow script prompts and choose correct parameters by typing correct number for the prompt and 
+5.  Follow script prompts and choose correct parameters by typing correct number for the prompt and 
     pressing Enter to move forward.
 
-5.  After script run, the results are shown in the raw data file in a new sheet.
+6.  After script run, the results are shown in the raw data file in a new sheet.
 
 
 
@@ -55,6 +60,7 @@ Statistical analysis:
 	- Select data file: Test_DORA_384wp.xlsx
 	- Select data sheet: SCR_ic50_RESULTS
 	- Select statistical test: Mann-Whitney
+
 
 
 
