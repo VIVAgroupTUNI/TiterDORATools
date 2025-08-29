@@ -44,7 +44,8 @@ Basic script run:
 
 2.  Close Excel files that are analysed/used by the script (i.e. master file and data files).
 
-3.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
+3.  Open Windows PowerShell by going into Source directory in TiterDORATools-main.zip,
+    typing "powershell" into address bar and pressing Enter.
 
 4.  Run script by typing "python EPDScript_96.py" or "python EPDScript_384.py" on Windows PowerShell. 
     To access more instructions on how the script functions, run the script with any of the following 
@@ -111,6 +112,7 @@ Script run:
 - Write parallel count: 8
 - Write tube label: 1
 - Write yes/no for adding new tissue: no
+
 
 
 
