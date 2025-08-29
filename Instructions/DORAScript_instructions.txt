@@ -38,7 +38,7 @@ Basic script run:
 
 1.  Close Excel files that are analysed/used by the scripts (i.e. data files).
 
-2.  Open Windows PowerShell by going into Source directory in TiterDORATools-main.zip file,
+2.  Open Windows PowerShell by going into Source directory found from the TiterDORATools-main.zip file,
     typing "powershell" into address bar and pressing Enter.
 
 3.  Run script by typing "python DORAScript_96.py" or "python DORAScript_384.py" on Windows PowerShell. 
@@ -92,6 +92,7 @@ Normalization and data arranging with DORAScript_384.py:
 	- Write yes/no for adding new group: no
 
 To continue data analysis, run 4PLScript.py and follow 4PLScript instructions.
+
 
 
 
