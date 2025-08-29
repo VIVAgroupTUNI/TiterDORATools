@@ -23,4 +23,3 @@ Follow these steps to use the script:
 7.  Script-specific instructions can be found from Instructions directory that comes with TiterDORATools-main.zip file 
     and they also contain information about how the provided test data were scripted. 
 
-
