@@ -19,3 +19,4 @@ Follow these steps to install the script environment.
     to install the required libraries used by the scripts.
 
 
+Note: README.md file contains information about the system requirements and packages, license and scripts.
