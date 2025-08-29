@@ -10,7 +10,8 @@ Follow these steps to use the script:
 3.  Make sure all data files that are to be used with the scripts are inside the "data_files"
     directory in the Source directory that comes with TiterDORATools-main.zip file.
 
-4.  Open Windows PowerShell by going into Source directory, typing "powershell" into address bar and pressing Enter.
+4.  Open Windows PowerShell by going into Source directory found from the TiterDORATools-main.zip file,
+    typing "powershell" into address bar and pressing Enter.
 
 5.  Run the desired script in Windows PowerShell using python to start them
     and follow along the script prompts. Run the script by typing e.g., "python EPDScript_96.py" and press Enter.
