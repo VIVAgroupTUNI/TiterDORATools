@@ -28,8 +28,8 @@ Prerequirements:
 
 Basic script run:
 
-1.  Make sure you have run 4PLScript before or that you have a sheet in the data file that contains
-	IC50/CC50/EC50 results for each sample in defined groups in the same format as shown in 
+1.  Make sure you have first run the 4PLScript or that you have a sheet in the data file that contains
+	IC50/CC50/EC50 results for each sample in the defined groups in the same format as shown in 
 	example Test_DORA_384wp.xlsx file in SCR_ic50_RESULTS sheet.
 
 2.  Close Excel files that are analysed/used by the script (i.e. data files).
@@ -60,6 +60,7 @@ Statistical analysis:
 	- Select data file: Test_DORA_384wp.xlsx
 	- Select data sheet: SCR_ic50_RESULTS
 	- Select statistical test: Mann-Whitney
+
 
 
 
