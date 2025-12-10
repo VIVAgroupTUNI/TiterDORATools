@@ -1148,10 +1148,10 @@ def plot_group_graph(data_file_name, timestamp, group_title, group_results):
         color = scatter.get_facecolor()[0]  # Extract the RGBA color tuple
         pyplot.plot(res['x_fit'], res['y_fit'], '--', color=color)
     # Add information and formatting to the graph
-    font_props = {'fontsize': 16, 'fontweight': 'bold'}
+    font_props = {'fontsize': 20, 'fontweight': 'bold'}
     pyplot.xlabel('Log dilution', **font_props)
     pyplot.ylabel('Inhibition (%)', **font_props)
-    pyplot.title(f'Variable Slope Fit for {group_title}', **font_props)
+    pyplot.title(f'{group_title}', **font_props)
     pyplot.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     ax.spines['top'].set_linewidth(3)
     ax.spines['right'].set_linewidth(3)
@@ -1299,3 +1299,4 @@ if __name__ == "__main__":
         print_status("Completed")
     except KeyboardInterrupt:
         exit_by_interruption()
+
