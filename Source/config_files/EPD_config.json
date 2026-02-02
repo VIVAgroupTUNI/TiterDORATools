@@ -1,0 +1,20 @@
+{
+    "tissues":
+    [
+        "Blood",
+        "Brain",
+        "Heart",
+        "Kidney",
+        "Large intestine",
+        "Liver",
+        "Lungs",
+        "Lymph nodes",
+        "Pancreas",
+        "Small intestine",
+        "Spleen",
+        "Stomach",
+        "Stool",
+        "Thymus",
+        "Virus"
+    ]
+}
